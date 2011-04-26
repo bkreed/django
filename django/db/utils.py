@@ -77,6 +77,7 @@ class ConnectionHandler(object):
             conn['ENGINE'] = 'django.db.backends.dummy'
         conn.setdefault('OPTIONS', {})
         conn.setdefault('TEST_CHARSET', None)
+        conn.setdefault('TEST_TEMPLATE', None)
         conn.setdefault('TEST_COLLATION', None)
         conn.setdefault('TEST_NAME', None)
         conn.setdefault('TEST_MIRROR', None)
